@@ -1,16 +1,15 @@
- 
-
+// Find the longest word length in a given sentence
 // E.g: "Hello , Javascript developers"
 
-// Output: developers
+// Output: 10 
 
 /**
- * Finds the longest word in a given sentence.
+ * Finds the length of the longest word in a given sentence.
  *
- * @param {string} sentence - The sentence from which to find the longest word.
- * @returns {string} The longest word in the sentence. If the input is not a string, returns "Provide input as a string type".
+ * @param {string} sentence - The sentence to evaluate.
+ * @returns {number|string} The length of the longest word in the sentence, or a message indicating invalid input.
  */
-function findLongestWord( sentence )  {
+function findLongestWordLength(sentence) {
 
     // check input is of type string
 
@@ -20,25 +19,24 @@ function findLongestWord( sentence )  {
         const words = sentence.split(' ');
 
         // store a temp variable
-        let longestWord = '';
+        let longestWordLength = 0;
+
+        // iterate over words array and find the longest word
 
         for (const word of words) {
             
             // check word in array is greater than longest word and store word in temp variable
             // this way, every time the `longestWord` value replaces with `word` which is greater than the previously stored value
-            if(word.length > longestWord.length){
-                longestWord = word;
+            if(word.length > longestWordLength){
+                longestWordLength = word.length;
             }                     
 
         }
 
-        return longestWord;
+        return longestWordLength;
         
     }
 
     return "Provide input as a string type"
+
 }
-
-console.log(findLongestWord("Hello, Javascript developers")); // developers
-
-

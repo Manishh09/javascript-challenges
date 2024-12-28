@@ -48,8 +48,14 @@ Array.prototype.customReduce = function(cb, initialValue) {
 
 const arr = [1,2,3,4,5];
 
-console.log(arr.customMap((num, i, arr) => num * 2));
+
+function output(arr) {
+    console.log(arr.customMap((num, i, arr) => num * 2));
+}
+
+output(arr)
+
 
 console.log(arr.customFilter((num, i, arr) => num % 2 === 0));
 
-console.log(arr.customReduce((acc, num, i, arr) => acc + num));
+console.log(arr.customReduce((acc, num, i, arr) => acc + num, 0));
