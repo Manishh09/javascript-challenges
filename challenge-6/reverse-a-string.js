@@ -27,3 +27,8 @@ function reverseStringWithoutInBuiltMethods(str) {
 
     return 'Provide a valid string input'
 }
+
+
+function reverseSentence(inputStr) {
+    
+}
