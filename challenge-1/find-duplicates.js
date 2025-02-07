@@ -1,58 +1,43 @@
+function containsDuplicates(arr) {
+  // using map
+
+  const map = new Map();
+
+  for (const element of arr) {
+    if (map.has(element)) {
+      return true;
+    }
+    map.set(element, true);
+  }
+  return false;
+}
+
+console.log(containsDuplicates([1, 2, 3, 1, 1, 1]));
+
+// write a function to retrieve duplicate elements from an array
+
 /**
- * Removes duplicate values from an array and returns a new array with unique values.
+ * Finds and returns an array of duplicate elements in the given array.
  *
- * @param {Array} arr - The array from which to remove duplicate values.
- * @returns {Array|string} A new array with unique values or a message if the input is not a valid array.
+ * @param {Array} arr - The array to search for duplicates.
+ * @returns {Array} - An array containing the duplicate elements.
+ * @Algorithm
+ * 1. Keep track of elements we've seen in the seenElements array
+ * 2. When we encounter an element that's already in seen, add it to duplicates (if it's not already there)
+ * 3. Add each element to seenElements as we process it
  */
-function uniqueArray( arr ) {
-    
-    const uniqArr = [];
-    
-    
-    if(Array.isArray(arr) && arr.length) {
-        
-      // return getUniqueElementsUsingForEach(arr, uniqArr);
-      // return getUniqueElementsUsingSet(arr)
-      // return getUniqueElementsUsingFilter(arr)
-      return getUniqueElementsUsingForOf(arr, uniqArr);
+function findDuplicates(arr) {
+  const seenElements = [];
+  const duplicates = [];
+
+  for (element of arr) {
+    if (seenElements.includes(element) && !duplicates.includes(element)) {
+      duplicates.push(element);
     }
-    
-    
-    return "Provide array of items"
+
+    seenElements.push(element);
+  }
+  return { duplicates, seenElements };
 }
 
-console.log(uniqueArray([1,1,2,3,3,5,6,7,8,8,9,9,10]))
-
-
-function getUniqueElementsUsingForOf(arr, uniqArr) {
-    for (const element of arr) {
-        if (!uniqArr.includes(element)) {
-            uniqArr.push(element);
-        }
-
-    }
-    return uniqArr;
-}
-
-function getUniqueElementsUsingFilter(arr) {
-    return arr.filter((item, idx) => arr.indexOf(item) === idx);
-}
-
-function getUniqueElementsUsingSet(arr) {
-    return [...new Set(arr)];
-}
-
-function getUniqueElementsUsingForEach(arr, uniqArr) {
-    // arr.forEach((item) => {
-    //     if (!uniqArr.includes(item)) {
-    //         uniqArr.push(item);
-    //     }
-    // });
-    arr.forEach((item) => {
-        if (uniqArr.indexOf(item) === -1) {
-            uniqArr.push(item);
-        }
-    });
-
-    return uniqArr;
-}
+console.log("findDuplicates", findDuplicates([1, 2, 3, 1, 1, 1]));
