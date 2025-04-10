@@ -30,5 +30,12 @@ function reverseStringWithoutInBuiltMethods(str) {
 
 
 function reverseSentence(inputStr) {
+
+    if(typeof inputStr === 'string' && inputStr.length) {
+        return inputStr.split(' ').reverse().join(' ');
+    }
+
+    return 'Provide a valid string input'
     
 }
+
