@@ -1,3 +1,9 @@
+/**
+ * Checks if an array contains duplicate elements.
+ *
+ * @param {Array} arr - The array to check for duplicates.
+ * @returns {boolean} - Returns `true` if duplicates are found, otherwise `false`.
+ */
 function containsDuplicates(arr) {
   // using map
 
