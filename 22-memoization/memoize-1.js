@@ -2,7 +2,7 @@
 
 // Q: Implement a memoization function that caches the results of a given function based on its input arguments. The memoized function should return the cached result when called with the same arguments again, improving performance for expensive function calls.
 
-function memoied(fn) {
+function memoized(fn) {
     // cache object to store results
     const cache = {};
 
@@ -30,7 +30,7 @@ const add = (x, y) => {
   return x + y;
 }
 
-const memoizedAdd = memoied(add);
+const memoizedAdd = memoized(add);
 
 console.log(memoizedAdd(2, 3)); // Computes and logs: Computing... 5
 console.log(memoizedAdd(2, 3)); // Returns cached result: 5
