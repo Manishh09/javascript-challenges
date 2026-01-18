@@ -1,4 +1,4 @@
-# Contributing to JavaScript Challenges
+# Contributing to JavaScript Coding Challenges
 
 Thank you for your interest in contributing to this repository! This guide will help you add new challenges, improve existing ones, and maintain consistency across the project.
 
