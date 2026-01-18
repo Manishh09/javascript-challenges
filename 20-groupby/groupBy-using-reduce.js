@@ -10,7 +10,7 @@
  */
 function groupByUsingReduce(arr) {
     
-    arr.reduce((res, obj)=> {
+    return arr.reduce((res, obj)=> {
         const {city, ...rest} = obj; 
         if(!res[city]){
             res[city]=[]

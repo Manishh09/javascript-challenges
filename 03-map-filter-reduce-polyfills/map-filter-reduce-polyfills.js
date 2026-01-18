@@ -34,12 +34,19 @@ Array.prototype.customFilter = function(cb) {
 
 Array.prototype.customReduce = function(cb, initialValue) {
     let acc = initialValue;
+    let startIndex = 0;
 
-    for (let index = 0; index < this.length; index++) {
-        
+    // If no initial value provided, use first element
+    if (initialValue === undefined) {
+        if (this.length === 0) {
+            throw new TypeError('Reduce of empty array with no initial value');
+        }
+        acc = this[0];
+        startIndex = 1;
+    }
 
-        acc = acc ? cb(acc, this[index], index, this) : this[index];
-        
+    for (let index = startIndex; index < this.length; index++) {
+        acc = cb(acc, this[index], index, this);
     }
 
     return acc;

@@ -7,6 +7,7 @@
 - The key concept here is closure - each inner function has access to the variables in its outer scope.
 
 - Example:
+
   ```javascript
     // Normal function
     function sum(a, b) {
@@ -15,6 +16,7 @@
 
     // Curried function
     const curriedSum = (a) => (b) => (c) => a + b + c;
+
 ```
 
 - So:

@@ -1,20 +1,31 @@
-# 🚀 JavaScript Challenges
+# 🚀 JavaScript Coding Challenges
 
 A comprehensive collection of JavaScript coding challenges, interview questions, and hands-on practice problems to master core JavaScript concepts and ace technical interviews.
 
 ## 📖 About This Repository
 
-This repository contains well-structured solutions to common JavaScript coding challenges, ranging from fundamental algorithms to advanced concepts. Each challenge includes multiple approaches and implementations to help you understand different problem-solving techniques.
+This repository contains well-structured solutions to common JavaScript coding challenges, ranging from fundamental algorithms to advanced concepts. Each challenge includes:
+
+- ✅ **Detailed problem statements** with examples and constraints
+- ✅ **Multiple solution approaches** (iterative, recursive, functional)
+- ✅ **Comprehensive test suites** (tests.js) with edge cases
+- ✅ **Time & space complexity analysis** for each solution
+- ✅ **Visual diagrams** for complex problems
+- ✅ **Real-world use cases** and applications
+- ✅ **Interview follow-up questions** with answers
 
 **Perfect for:**
+
 - 💼 Preparing for JavaScript technical interviews
 - 📚 Learning and practicing core JavaScript concepts
 - 🎯 Improving problem-solving and algorithmic thinking
 - 🔄 Understanding different approaches to the same problem
+- 📊 Understanding time/space complexity trade-offs
 
 ## 🗂️ Challenge Categories
 
 ### 📊 Array Manipulation
+
 | # | Challenge | Key Concepts |
 |---|-----------|--------------|
 | 01 | [Find Duplicates](./01-find-duplicates) | Duplicates, Unique elements, Set, Filter |
@@ -24,6 +35,7 @@ This repository contains well-structured solutions to common JavaScript coding c
 | 17 | [Check Squared Elements](./17-check-squared-elements) | Array comparison, Validation |
 
 ### 🔤 String Operations
+
 | # | Challenge | Key Concepts |
 |---|-----------|--------------|
 | 02 | [Find Longest Word](./02-find-longest-word) | String manipulation, Split, Reduce |
@@ -33,12 +45,14 @@ This repository contains well-structured solutions to common JavaScript coding c
 | 21 | [Count Vowels](./21-count-vowels) | Regex, Filter, Reduce |
 
 ### 🧮 Mathematical & Algorithmic
+
 | # | Challenge | Key Concepts |
 |---|-----------|--------------|
 | 13 | [Fibonacci](./13-fibonacci) | Recursion, Dynamic programming, Memoization |
 | 15 | [Factorial](./15-factorial) | Recursion, Iterative approach |
 
 ### 🔧 Utility Functions & Polyfills
+
 | # | Challenge | Key Concepts |
 |---|-----------|--------------|
 | 03 | [Map, Filter, Reduce Polyfills](./03-map-filter-reduce-polyfills) | Custom implementations, Prototypes |
@@ -48,45 +62,67 @@ This repository contains well-structured solutions to common JavaScript coding c
 | 12 | [Object Entries](./12-object-entries) | Object manipulation, Entries polyfill |
 
 ### 🎨 Advanced Concepts
+
 | # | Challenge | Key Concepts |
 |---|-----------|--------------|
 | 07 | [Currying](./07-currying) | Function currying, Closures, Partial application |
 | 10 | [API Calls](./10-api-calls) | Async/Await, Promises, Fetch API |
 | 19 | [Get Unique Objects](./19-get-unique-objects) | Object uniqueness, Set, Filter, Deep comparison |
 | 20 | [GroupBy](./20-groupby) | Data aggregation, Reduce, Object grouping |
-
-### 🎯 Output-Based Questions
-- [**JavaScript Output Questions**](./output-based-qs-js) - 18 tricky output-based questions
-- [**TypeScript Output Questions**](./output-based-qs-ts) - TypeScript-specific challenges
+| 22 | [Memoization](./22-memoization) | Caching, Performance optimization, Closures |
+| 23 | [Method Chaining](./23-method-chaining-problem) | Builder pattern, this context, Fluent API |
+| 25 | [Debouncing](./25-debouncing) | Event optimization, Timers, Performance |
+| 26 | [Throttling](./26-throttling) | Rate limiting, Timers, Performance |
 
 ## 🌟 Key Features
 
 - ✅ **Multiple Solutions**: Each challenge includes different approaches (recursive, iterative, functional, etc.)
-- 📝 **Clear Documentation**: Problems include explanations and notes where applicable
+- 📝 **Detailed Problem Statements**: Clear descriptions, examples, constraints, and complexity analysis
+- 🧪 **Comprehensive Test Suites**: Each challenge has a `tests.js` file with edge cases and visual output
 - 🎓 **Learning Focused**: Designed to help understand concepts, not just memorize solutions
-- 🔍 **Interview Ready**: Covers common interview patterns and questions
+- 🔍 **Interview Ready**: Covers common interview patterns with follow-up questions
 - 💡 **Best Practices**: Demonstrates modern JavaScript syntax and idioms
+- 📊 **ASCII Diagrams**: Visual representations for complex problems
+- 🐛 **Bug-Free Code**: All critical bugs fixed and tested
 
 ## 🚀 Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Manishh09/javascript-challenges.git
    cd javascript-challenges
    ```
 
 2. **Explore challenges**
-   - Browse through numbered folders (01-21)
-   - Each folder contains related challenge implementations
-   - Some challenges have multiple solution files demonstrating different approaches
+   - Browse through numbered folders (01-26)
+   - Each folder contains solution files and comprehensive tests
+   - Many challenges have `README.md` with detailed explanations
+   - High-priority folders: currying, memoization, polyfills, debouncing, throttling
 
 3. **Run the code**
+
    ```bash
    # Navigate to any challenge folder
    cd 01-find-duplicates
    
-   # Run with Node.js
+   # Run the solution
    node find-duplicates.js
+   
+   # Run comprehensive tests
+   node tests.js
+   ```
+
+4. **Running Tests**
+   Most challenges now include a `tests.js` file with:
+   - Multiple test cases covering edge cases
+   - Visual explanations with ASCII art
+   - Performance comparisons
+   - Real-world examples
+
+   ```bash
+   cd 25-debouncing
+   node tests.js  # See debouncing in action with timers
    ```
 
 ## 📚 How to Use This Repository
@@ -102,6 +138,7 @@ This repository contains well-structured solutions to common JavaScript coding c
 ## 🤝 Contributing
 
 Contributions are welcome! If you have:
+
 - Alternative solutions to existing challenges
 - New challenges to add
 - Improvements to existing code or documentation
@@ -109,14 +146,11 @@ Contributions are welcome! If you have:
 
 Please feel free to open a pull request or issue.
 
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
 ## 📄 License
 
 This project is open source and available for educational purposes.
-
-## 🔗 Resources
-
-Helpful resources for JavaScript interview preparation:
-- Output-based question references available in `output-based-qs-js/linkst.md`
 
 ---
 
