@@ -74,6 +74,7 @@ This repository contains well-structured solutions to common JavaScript coding c
 | 24 | [Two-Way Binding](./24-two-way-binding) | 🔴 Hard | Proxy, Object.defineProperty, Observers |
 | 25 | [Debouncing](./25-debouncing) | 🟡 Medium | Event optimization, Timers, Performance |
 | 26 | [Throttling](./26-throttling) | 🟡 Medium | Rate limiting, Timers, Performance |
+| 27 | [Private Counter with Reset](./27-private-counter-with-reset) | 🟡 Medium | Closures, Encapsulation, State management |
 
 ## 🌟 Key Features
 
